@@ -50,8 +50,12 @@ class ViewModel: NSObject {
 extension ViewModel: UITableViewDataSource, UITableViewDelegate, FollowButtonsDelegate {
     func followButtonTapped(at index: IndexPath) {
         // Run Twitter API to Follow user
-        var followedHandle = searchResultModel?[index.row]
-        followedHandle?.isFollowing = true
+        let followedHandle = searchResultModel![index.row]
+        if followedHandle.isFollowing! {
+            searchResultModel![index.row].isFollowing = false
+        } else {
+            searchResultModel![index.row].isFollowing = true
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

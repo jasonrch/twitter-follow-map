@@ -18,7 +18,7 @@ class TWTableViewCell: UITableViewCell {
         didSet {
             self.textLabel?.text = handle?.twitterHandle
             if handle.isFollowing! {
-                followBtn.setTitle("Followed", for: .normal)
+                followBtn.setTitle("Following", for: .normal)
                 followBtn.setTitleColor(.systemRed, for: .normal)
             }
         }
@@ -40,8 +40,15 @@ class TWTableViewCell: UITableViewCell {
     }
     
      @IBAction func followButton(_ sender: UIButton) {
-        followBtn.setTitle("Followed", for: .normal)
-        followBtn.setTitleColor(.systemRed, for: .normal)
+        
+        if !handle.isFollowing! {
+            followBtn.setTitle("Followed", for: .normal)
+            followBtn.setTitleColor(.systemRed, for: .normal)
+        } else {
+            followBtn.setTitle("Follow", for: .normal)
+            followBtn.setTitleColor(.systemBlue, for: .normal)
+        }
+
         self.delegate.followButtonTapped(at: indexPath)
      }
 }
