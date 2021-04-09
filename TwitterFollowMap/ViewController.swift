@@ -22,8 +22,6 @@ class ViewController: UIViewController {
         twTableView.delegate = viewModel
         mapView.delegate = viewModel
         
-
-        
         //Set View Model bindings.
         self.viewModel.bootStrap()
         self.viewModel.reloadTableViewCompletion = { [weak self] in
