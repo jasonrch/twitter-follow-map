@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D5855A32620A87400F18230 /* TWTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5855A22620A87400F18230 /* TWTableViewCell.swift */; };
+		4D5855A82620B5BD00F18230 /* MapKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5855A72620B5BD00F18230 /* MapKitExtensions.swift */; };
 		4DB6EB9B26200CF9004CF5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6EB9A26200CF9004CF5F8 /* AppDelegate.swift */; };
 		4DB6EB9D26200CF9004CF5F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6EB9C26200CF9004CF5F8 /* SceneDelegate.swift */; };
 		4DB6EB9F26200CF9004CF5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6EB9E26200CF9004CF5F8 /* ViewController.swift */; };
@@ -15,6 +17,9 @@
 		4DB6EBA726200CFE004CF5F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DB6EBA526200CFE004CF5F8 /* LaunchScreen.storyboard */; };
 		4DB6EBB226200CFF004CF5F8 /* TwitterFollowMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6EBB126200CFF004CF5F8 /* TwitterFollowMapTests.swift */; };
 		4DB6EBBD26200CFF004CF5F8 /* TwitterFollowMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6EBBC26200CFF004CF5F8 /* TwitterFollowMapUITests.swift */; };
+		4DB6EBCF26200DD5004CF5F8 /* TwitterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6EBCE26200DD5004CF5F8 /* TwitterModel.swift */; };
+		4DB6EBD726200E3F004CF5F8 /* TwitterAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6EBD626200E3F004CF5F8 /* TwitterAnnotation.swift */; };
+		4DB6EBDD26201132004CF5F8 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DB6EBDC26201132004CF5F8 /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4D5855A22620A87400F18230 /* TWTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWTableViewCell.swift; sourceTree = "<group>"; };
+		4D5855A72620B5BD00F18230 /* MapKitExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitExtensions.swift; sourceTree = "<group>"; };
 		4DB6EB9726200CF9004CF5F8 /* TwitterFollowMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterFollowMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB6EB9A26200CF9004CF5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DB6EB9C26200CF9004CF5F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +56,9 @@
 		4DB6EBB826200CFF004CF5F8 /* TwitterFollowMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterFollowMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB6EBBC26200CFF004CF5F8 /* TwitterFollowMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterFollowMapUITests.swift; sourceTree = "<group>"; };
 		4DB6EBBE26200CFF004CF5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DB6EBCE26200DD5004CF5F8 /* TwitterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterModel.swift; sourceTree = "<group>"; };
+		4DB6EBD626200E3F004CF5F8 /* TwitterAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterAnnotation.swift; sourceTree = "<group>"; };
+		4DB6EBDC26201132004CF5F8 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +109,8 @@
 		4DB6EB9926200CF9004CF5F8 /* TwitterFollowMap */ = {
 			isa = PBXGroup;
 			children = (
+				4DB6EBE12620113A004CF5F8 /* VIewModel */,
+				4DB6EBCD26200DBB004CF5F8 /* Model */,
 				4DB6EB9A26200CF9004CF5F8 /* AppDelegate.swift */,
 				4DB6EB9C26200CF9004CF5F8 /* SceneDelegate.swift */,
 				4DB6EB9E26200CF9004CF5F8 /* ViewController.swift */,
@@ -106,6 +118,8 @@
 				4DB6EBA326200CFD004CF5F8 /* Assets.xcassets */,
 				4DB6EBA526200CFE004CF5F8 /* LaunchScreen.storyboard */,
 				4DB6EBA826200CFE004CF5F8 /* Info.plist */,
+				4D5855A22620A87400F18230 /* TWTableViewCell.swift */,
+				4D5855A72620B5BD00F18230 /* MapKitExtensions.swift */,
 			);
 			path = TwitterFollowMap;
 			sourceTree = "<group>";
@@ -126,6 +140,23 @@
 				4DB6EBBE26200CFF004CF5F8 /* Info.plist */,
 			);
 			path = TwitterFollowMapUITests;
+			sourceTree = "<group>";
+		};
+		4DB6EBCD26200DBB004CF5F8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4DB6EBCE26200DD5004CF5F8 /* TwitterModel.swift */,
+				4DB6EBD626200E3F004CF5F8 /* TwitterAnnotation.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4DB6EBE12620113A004CF5F8 /* VIewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4DB6EBDC26201132004CF5F8 /* ViewModel.swift */,
+			);
+			path = VIewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DB6EB9F26200CF9004CF5F8 /* ViewController.swift in Sources */,
+				4DB6EBCF26200DD5004CF5F8 /* TwitterModel.swift in Sources */,
 				4DB6EB9B26200CF9004CF5F8 /* AppDelegate.swift in Sources */,
+				4D5855A32620A87400F18230 /* TWTableViewCell.swift in Sources */,
 				4DB6EB9D26200CF9004CF5F8 /* SceneDelegate.swift in Sources */,
+				4DB6EBDD26201132004CF5F8 /* ViewModel.swift in Sources */,
+				4DB6EBD726200E3F004CF5F8 /* TwitterAnnotation.swift in Sources */,
+				4D5855A82620B5BD00F18230 /* MapKitExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
